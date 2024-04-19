@@ -1,0 +1,37 @@
+@import '../../variables.scss';
+
+.dishNav {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+
+  .quantity {
+    color: $color-grey;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .removeAll {
+    display: block;
+    max-width: 150px;
+    min-height: 30px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: $color-turquoise-dark;
+    color: $color-white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.2s linear;
+
+    &:hover {
+      box-shadow: $color-turquoise 0 0px 0px 40px inset;
+      color: $color-grey-light;
+    }
+
+    &:active {
+      transform: translate(0, 5px);
+    }
+  }
+}

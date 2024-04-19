@@ -1,0 +1,26 @@
+@import '../../variables.scss';
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  .item {
+    min-height: 200px;
+    overflow: hidden;
+    grid-column: span 2;
+    border-radius: 15px;
+    background-color: $color-grey-skeleton;
+    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.07);
+    animation-name: blink;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

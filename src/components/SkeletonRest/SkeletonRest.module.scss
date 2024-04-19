@@ -1,0 +1,53 @@
+@import '../../variables.scss';
+
+.container {
+  .title {
+    max-width: 300px;
+    margin-top: 15px;
+    min-height: 40px;
+  }
+
+  .nav {
+    margin: 0 -20px;
+    padding: 38px 20px 0 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    &::after {
+      content: '';
+      position: fixed;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      background: $color-white;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.5032606792717087) 38%, rgba(255, 255, 255, 1) 53%);
+    }
+
+    .navItem {
+      flex: 0 0 auto;
+      width: 65px;
+      height: 25px;
+    }
+  }
+
+  .title,
+  .navItem {
+    border-radius: 10px;
+    background-color: $color-grey-skeleton;
+    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.07);
+    animation-name: blink;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+
+  .navItem:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+}

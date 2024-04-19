@@ -1,0 +1,28 @@
+@import '../../variables.scss';
+
+.content {
+  .top {
+    margin: -20px -20px 20px -20px;
+    background: linear-gradient(rgba(244, 242, 242, 0.802), rgba(244, 242, 240, 0.802)), url(../../../img/back-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .img {
+      overflow: hidden;
+      margin: 0 auto;
+      display: block;
+      width: 100%;
+      max-width: 600px;
+    }
+  }
+}
+
+.main {
+  .title {
+    margin: 0 0 20px;
+    color: $color-grey-dark;
+    font-size: 28px;
+    font-weight: 600;
+  }
+}

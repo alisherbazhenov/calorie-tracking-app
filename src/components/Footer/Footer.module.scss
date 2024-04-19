@@ -1,0 +1,50 @@
+@import '../../variables.scss';
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(254, 254, 254, 0.899);
+  box-shadow: 0px -7px 15px 0px rgba(0, 0, 0, 0.07);
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  .list {
+    display: flex;
+    gap: 45px;
+
+    .item {
+      position: relative;
+
+      .label {
+        position: absolute;
+        right: -7px;
+        top: -5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 16px;
+        height: 16px;
+        border-radius: 50%;
+      }
+
+      .label span {
+        padding: 0 5px;
+        color: $color-white;
+        font-size: 11px;
+        font-weight: 500;
+      }
+
+      .labelPink {
+        background-color: #fa7c7c;
+      }
+
+      .labelBlue {
+        background-color: $color-turquoise-dark;
+      }
+    }
+  }
+}

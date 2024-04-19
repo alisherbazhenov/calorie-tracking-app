@@ -1,0 +1,1 @@
+export { Diet } from './Diet'

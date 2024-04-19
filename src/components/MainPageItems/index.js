@@ -1,0 +1,1 @@
+export { MainPageItems } from './MainPageItems'

@@ -1,0 +1,49 @@
+@import '../../variables.scss';
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+
+  .item {
+    position: relative;
+    overflow: hidden;
+    grid-column: span 2;
+    border-radius: 15px;
+    box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.07);
+    background-color: $color-turquoise;
+
+    &:nth-child(2n) {
+      background-color: $color-pink;
+    }
+  }
+
+  .itemBox {
+    text-align: center;
+
+    .itemTop {
+      margin-bottom: 38px;
+
+      .image {
+        object-fit: cover;
+      }
+
+      .dishName {
+        padding: 0 14px;
+        color: $color-grey;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+
+    .dishCalorie {
+      position: absolute;
+      bottom: 6px;
+      width: 100%;
+      padding: 0 14px;
+      color: $color-grey-dark;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import '../../variables.scss';
+
+.breadCrumbs {
+  padding: 20px 0 0;
+}
+
+.crumb {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.breadCrumbs .crumb::after {
+  content: '⟩';
+  margin-left: 10px;
+}
+
+.breadCrumbs .crumb:last-child::after {
+  display: none;
+}
+
+.link {
+  font-size: 18px;
+  font-weight: 400;
+  color: $color-grey-light;
+  text-decoration: underline;
+  transition: all 0.5s;
+
+  &:hover {
+    color: $color-link;
+  }
+}
+
+.spanLink {
+  font-size: 18px;
+  font-weight: 400;
+  color: $color-grey-dark;
+}

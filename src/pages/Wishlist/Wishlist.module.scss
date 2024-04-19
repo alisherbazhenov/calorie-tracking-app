@@ -1,0 +1,71 @@
+@import '../../variables.scss';
+
+.container {
+  .topBlock {
+    margin-bottom: 20px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid $color-grey-light;
+
+    .title {
+      margin: 0;
+      color: $color-grey-dark;
+      font-size: 22px;
+      font-weight: 400;
+    }
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    .item {
+      position: relative;
+      min-height: 200px;
+      overflow: hidden;
+      grid-column: span 2;
+      border-radius: 15px;
+      box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.07);
+      background-color: $color-turquoise;
+
+      &:nth-child(2n) {
+        background-color: $color-pink;
+      }
+
+      .link {
+        padding: 10px;
+
+        .image {
+          border-radius: 13px;
+          object-fit: cover;
+        }
+
+        .dish {
+          .dishName {
+            margin-bottom: 36px;
+            color: $color-grey;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.1rem;
+          }
+        }
+
+        .linkBottom {
+          position: absolute;
+          bottom: 10px;
+          left: 15px;
+          right: 15px;
+
+          .itemBottom {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+}

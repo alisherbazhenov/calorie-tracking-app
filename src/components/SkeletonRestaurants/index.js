@@ -1,0 +1,1 @@
+export { SkeletonRestaurants } from './SkeletonRestaurants'

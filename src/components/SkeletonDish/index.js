@@ -1,0 +1,1 @@
+export { SkeletonDish } from './SkeletonDish'
