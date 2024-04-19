@@ -1,6 +1,10 @@
 @import '../../variables.scss';
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
   .topBlock {
     padding-top: 20px;
     padding-bottom: 10px;
@@ -73,10 +77,10 @@
   }
 
   .desc {
-    margin: 0 0 25px 0;
+    margin: 0 0 10px 0;
     color: $color-grey-light;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1rem;
   }
 
@@ -89,22 +93,19 @@
 
   .btns {
     display: flex;
-    margin: 0 auto;
-    max-width: 300px;
+    margin: auto;
     justify-content: center;
 
     .btnsCount {
       display: flex;
-      align-items: center;
-      flex-direction: row;
-      justify-content: center;
-      gap: 12px;
-      padding: 10px;
-      background-color: $color-count-btn;
-      border-radius: 18px;
+      gap: 24px;
+      padding: 10px 14px;
+      border-radius: 50px;
+      box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.07);
+      background-color: #fff;
 
       .dishQuantity {
-        color: $color-grey-dark;
+        color: $color-grey;
         font-size: 28px;
         font-weight: 400;
       }

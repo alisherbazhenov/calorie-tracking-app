@@ -21,7 +21,7 @@
 .list {
   .item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 14px;
     padding: 15px 0;
@@ -72,20 +72,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
 
   .incrementDecrement {
-    width: 85px;
+    width: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3px 5px;
-    background-color: $color-count-btn;
-    border-radius: 10px;
+    border-radius: 20px;
 
     .dishQuantity {
       color: $color-grey-dark;
-      font-size: 16px;
+      font-size: 24px;
       font-weight: 400;
     }
   }
