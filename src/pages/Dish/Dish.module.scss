@@ -160,11 +160,6 @@
   }
 }
 
-.btnAnimated {
-  animation: moveInBottom 3s ease-out;
-  animation-fill-mode: backwards;
-}
-
 @keyframes moveInBottom {
   0% {
     opacity: 0;

@@ -110,10 +110,7 @@ export const Dish = () => {
       </div>
       <div className={styles.btns}>
         {!dishAdded?.count ? (
-          <button
-            className={`${styles.btn} ${styles.btnColor} ${styles.btnAnimated}`}
-            onClick={() => dispatch(addToDiet(dish))}
-          >
+          <button className={`${styles.btn} ${styles.btnColor}`} onClick={() => dispatch(addToDiet(dish))}>
             Добавить в рацион
           </button>
         ) : (
