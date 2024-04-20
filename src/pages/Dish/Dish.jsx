@@ -63,51 +63,49 @@ export const Dish = () => {
   }
 
   return (
-    <div className={styles.container}>
-      <div>
-        <div className={styles.topBlock}>
-          <h2 className={styles.title}>{dish.name}</h2>
-        </div>
-        <img className={styles.image} src={dish.img} alt={dish.alt} />
-        <div className={styles.favorite}>
-          <h3 className={styles.subtitle}>Пищевая ценность</h3>
-          <LikeButton isActive={isActive} onClick={() => handleAddOrRemoveDish(dish)} />
-        </div>
-
-        <ul className={styles.list}>
-          <li className={styles.item}>
-            <img className={styles.icon} src="/img/gramm.png" alt="картинка" />
-            <span className={styles.span}>вес</span>
-            <span className={styles.span}>{dish.gm} гр</span>
-          </li>
-          <li className={styles.item}>
-            <img className={styles.icon} src="/img/kcal.png" alt="картинка" />
-            <span className={styles.span}>ккал</span>
-            <span className={styles.span}>{dish.kcal}</span>
-          </li>
-          <li className={styles.item}>
-            <img className={styles.icon} src="/img/protein.png" alt="картинка" />
-            <span className={styles.span}>б</span>
-            <span className={styles.span}>{dish.protein} гр</span>
-          </li>
-          <li className={styles.item}>
-            <img className={styles.icon} src="/img/fats2.png" alt="картинка" />
-            <span className={styles.span}>ж</span>
-            <span className={styles.span}>{dish.fat} гр</span>
-          </li>
-          <li className={styles.item}>
-            <img className={styles.icon} src="/img/carbohydrates.png" alt="картинка" />
-            <span className={styles.span}>у</span>
-            <span className={styles.span}>{dish.carbohydrates} гр</span>
-          </li>
-        </ul>
-
-        <h3 className={styles.text}>Основные ингридиенты</h3>
-        <p className={styles.desc}>{dish.ingredients}</p>
-        <p className={styles.thermalProcess}>
-          Основной тепловой процесс: <span>{dish.cookingProcess}</span>
-        </p>
+    <div className={styles.main}>
+      <div className={styles.topBlock}>
+        <h2 className={styles.title}>{dish.name}</h2>
       </div>
+      <img className={styles.image} src={dish.img} alt={dish.alt} />
+      <div className={styles.favorite}>
+        <h3 className={styles.subtitle}>Пищевая ценность</h3>
+        <LikeButton isActive={isActive} onClick={() => handleAddOrRemoveDish(dish)} />
+      </div>
+
+      <ul className={styles.list}>
+        <li className={styles.item}>
+          <img className={styles.icon} src="/img/gramm.png" alt="картинка" />
+          <span className={styles.span}>вес</span>
+          <span className={styles.span}>{dish.gm} гр</span>
+        </li>
+        <li className={styles.item}>
+          <img className={styles.icon} src="/img/kcal.png" alt="картинка" />
+          <span className={styles.span}>ккал</span>
+          <span className={styles.span}>{dish.kcal}</span>
+        </li>
+        <li className={styles.item}>
+          <img className={styles.icon} src="/img/protein.png" alt="картинка" />
+          <span className={styles.span}>б</span>
+          <span className={styles.span}>{dish.protein} гр</span>
+        </li>
+        <li className={styles.item}>
+          <img className={styles.icon} src="/img/fats2.png" alt="картинка" />
+          <span className={styles.span}>ж</span>
+          <span className={styles.span}>{dish.fat} гр</span>
+        </li>
+        <li className={styles.item}>
+          <img className={styles.icon} src="/img/carbohydrates.png" alt="картинка" />
+          <span className={styles.span}>у</span>
+          <span className={styles.span}>{dish.carbohydrates} гр</span>
+        </li>
+      </ul>
+
+      <h3 className={styles.text}>Основные ингридиенты</h3>
+      <p className={styles.desc}>{dish.ingredients}</p>
+      <p className={styles.thermalProcess}>
+        Основной тепловой процесс: <span>{dish.cookingProcess}</span>
+      </p>
       <div className={styles.btns}>
         {!dishAdded?.count ? (
           <button className={`${styles.btn} ${styles.btnColor}`} onClick={() => dispatch(addToDiet(dish))}>

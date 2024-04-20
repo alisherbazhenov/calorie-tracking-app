@@ -12,7 +12,7 @@ export const Diet = () => {
   const dispatch = useDispatch()
 
   return (
-    <>
+    <div className={styles.main}>
       <h1 className={styles.title}>Рацион</h1>
       <DishNav itemLength={dietItems.length} onClick={() => dispatch(cleareAllDiet())} />
       <div className={styles.pieChart}>
@@ -48,6 +48,6 @@ export const Diet = () => {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   )
 }

@@ -20,7 +20,7 @@ export const Wishlist = () => {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={styles.main}>
       <div className={styles.topBlock}>
         <h2 className={styles.title}>Список любимых блюд</h2>
       </div>
@@ -33,6 +33,12 @@ export const Wishlist = () => {
                 <div className={styles.dish}>
                   <img className={styles.image} src={item.img} alt={item.alt} />
                   <p className={styles.dishName}>{item.name}</p>
+                  <div className={styles.dishPrm}>
+                    <span className={styles.dishSpan}>{item.gm}г</span>
+                    <span className={styles.dishSpan}>б&#8226;{item.protein}</span>
+                    <span className={styles.dishSpan}>ж&#8226;{item.fat}</span>
+                    <span className={styles.dishSpan}>у&#8226;{item.carbohydrates}</span>
+                  </div>
                 </div>
 
                 <div className={styles.linkBottom}>

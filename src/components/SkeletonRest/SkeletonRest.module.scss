@@ -1,6 +1,9 @@
 @import '../../variables.scss';
 
-.container {
+.main {
+  padding: 8px 12px 0;
+  margin: 0 auto;
+  max-width: 767px;
   .title {
     max-width: 300px;
     margin-top: 15px;

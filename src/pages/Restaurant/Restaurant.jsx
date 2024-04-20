@@ -43,7 +43,7 @@ export const Restaurant = () => {
   const { categories } = restaurant
 
   return (
-    <div className={styles.container}>
+    <div className={styles.main}>
       <h1 className={styles.title}>{restaurant.name}</h1>
       <nav className={styles.navBlock}>
         <ul className={styles.nav}>

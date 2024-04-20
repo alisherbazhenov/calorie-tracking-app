@@ -1,7 +1,9 @@
 @import '../../variables.scss';
 
 .breadCrumbs {
-  padding: 20px 0 0;
+  padding: 8px 12px 0;
+  margin: 0 auto;
+  max-width: 767px;
 }
 
 .crumb {

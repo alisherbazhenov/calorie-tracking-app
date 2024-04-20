@@ -1,7 +1,7 @@
 import styles from './SkeletonDish.module.scss'
 
 export const SkeletonDish = () => (
-  <div className={styles.container}>
+  <div className={styles.main}>
     <div className={styles.topBlock}>
       <div className={styles.title}></div>
     </div>

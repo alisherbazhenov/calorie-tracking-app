@@ -1,90 +1,96 @@
 @import '../../variables.scss';
 
-.title {
-  margin-bottom: 20px;
-  padding: 20px 0;
-  color: $color-grey-dark;
-  font-size: 22px;
-  font-weight: 400;
-  border-bottom: 1px solid $color-grey-light;
-  margin: 0 0 25px 0;
-}
+.main {
+  padding: 8px 12px 0;
+  margin: 0 auto;
+  max-width: 767px;
 
-.pieChart {
-  margin-bottom: 20px;
-  padding: 5px 5px 20px 5px;
-  height: 400px;
-  background-color: #b5e43f2b;
-  border-radius: 20px;
-}
+  .title {
+    margin-bottom: 20px;
+    padding: 20px 0;
+    color: $color-grey-dark;
+    font-size: 22px;
+    font-weight: 400;
+    border-bottom: 1px solid $color-grey-light;
+    margin: 0 0 25px 0;
+  }
 
-.list {
-  .item {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 14px;
-    padding: 15px 0;
-    border-bottom: 1px solid rgb(218, 214, 214);
+  .pieChart {
+    margin-bottom: 20px;
+    padding: 5px 5px 20px 5px;
+    height: 400px;
+    background-color: #b5e43f2b;
+    border-radius: 20px;
+  }
 
-    .itemLeft {
+  .list {
+    .item {
       display: flex;
-      align-items: center;
-      gap: 10px;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 15px 0;
+      border-bottom: 1px solid rgb(218, 214, 214);
 
-      .image {
-        border-radius: 15px;
-        width: 100px;
-        height: 80px;
-        @media (width < 400px) {
-          display: none;
+      .itemLeft {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .image {
+          border-radius: 15px;
+          width: 100px;
+          height: 80px;
+          @media (width < 400px) {
+            display: none;
+          }
         }
-      }
 
-      .itemText {
-        .dishName {
-          margin-bottom: 6px;
-          color: $color-grey-dark;
-          font-size: 14px;
-          font-weight: 300;
-          line-height: 0.9rem;
-        }
-
-        .dishParametres {
-          .kcalGm {
+        .itemText {
+          .dishName {
+            margin-bottom: 6px;
             color: $color-grey-dark;
-            font-size: 13px;
-            font-weight: 400;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 0.9rem;
           }
 
-          .bju {
-            color: $color-grey-light;
-            font-size: 12px;
-            font-weight: 400;
+          .dishParametres {
+            .kcalGm {
+              color: $color-grey-dark;
+              font-size: 13px;
+              font-weight: 400;
+            }
+
+            .bju {
+              color: $color-grey-light;
+              font-size: 12px;
+              font-weight: 400;
+            }
           }
         }
       }
     }
   }
-}
 
-.btns {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-
-  .incrementDecrement {
-    width: 100px;
+  .btns {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    border-radius: 20px;
+    gap: 8px;
 
-    .dishQuantity {
-      color: $color-grey-dark;
-      font-size: 24px;
-      font-weight: 400;
+    .incrementDecrement {
+      width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 20px;
+
+      .dishQuantity {
+        color: $color-grey-dark;
+        font-size: 24px;
+        font-weight: 400;
+      }
     }
   }
 }
