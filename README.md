@@ -1,10 +1,10 @@
+# Calorie Tracking App
+
+https://calorie-tracking-app.vercel.app/
+
 Счетчик подсчета калорий питания для сети ресторанов
 
 Приложение отслеживает норму потребления калорий, формирует диаграмму БЖУ,
 добавляет блюда в избранное
 
 Технологии: React, Redux, SCSS
-
-https://calorie-tracking-app.vercel.app/
-
-# React + Vite
